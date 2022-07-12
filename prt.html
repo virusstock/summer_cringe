@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        async function changeImage() {
+            let image = document.querySelector('img');
+            let response = await fetch('https://randomfox.ca/floof/');
+            let imageData = await response.json();
+            console.log(imageData);
+            image.src = imageData.image;
+        }
+    </script>
+</head>
+<body>
+    <h1>Test</h1>
+    <div>
+        <button id="fox-test" onclick="changeImage()">Тест лисы</button>
+    </div>
+    <img width="600" src="https://avatars.mds.yandex.net/get-zen_doc/1219682/pub_5eaa7423102eee24419d5607_5eaa74d77e79087ec3668df9/scale_1200">
+</body>
+</html>
