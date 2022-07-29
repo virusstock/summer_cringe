@@ -3,25 +3,9 @@
 <head>
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script>
-
-        const api_key = 'PUwBTbX3OoBfsQRuyaQstmkJUMwF7zthjIUC76qB';
-
-        async function changeImage() {
-
-            const request = `https://api.nasa.gov/planetary/apod?api_key=${api_key}`;
-            let response = await fetch(request);
-            let imageData = await response.json();
-            console.log(imageData);
-
-            let image = document.querySelector('img');
-            image.src = imageData.url;
-        }
-
-    </script>
+    <script src="script.js"></script>
 </head>
 <body>
-
     <h1>NASA API! Photo of the day!</h1>
     <div>
         <button id="fox-test" onclick="changeImage()">TEST API</button>
