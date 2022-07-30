@@ -10,3 +10,10 @@ async function changeImage() {
     let image = document.querySelector('img');
     image.src = imageData.url;
 }
+
+function initButton() {
+    let button = document.querySelector('#fox-test');
+    button.addEventListener('click', changeImage);
+}
+
+document.addEventListener('DOMContentLoaded', initButton);
