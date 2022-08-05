@@ -1,15 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Document</title>
+    
+    <title> --+- [ A P I ] -+-- </title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="symbolic_decoration.css">
     <script src="script.js"></script>
 </head>
+
 <body>
-    <h1>NASA API! Photo of the day!</h1>
-    <div>
-        <button id="fox-test" onclick="changeImage()">TEST API</button>
+    <div id="canvas">
+        <h1 class="common-text-style">
+            HEY, IT IS NASA API!
+            On this web page, you can select the request to see photo of the day from NASA!
+            The photos are also attached with a description written by someone on the NASA website.
+            Choose your favourite date! It is may be a wedding day, first time abroad, date of longnight dancing under stary sky, a day when you jumped with parachute
+            or planted a tree. 
+            Any date you want! See amazing pictures from NASA!
+        </h1>
+        <div id="line"></div>
+
+        <!-- LEFT SIDE -->
+
+        <div class="bodypart grid-2">
+            <div class="leftpart">
+                <div class = "grid-2">
+                    <div class="common-text-style mini-header" id="picText">  Picture of the day: </div>
+                    <div class="symbolic-decoration slash-symbol"></div>
+                </div>
+                
+                <div class="img-container">
+                    <img id="picture-of-the-day" src="nasa.png">
+                </div>
+                
+            </div>
+            
+            <!-- RIGHT SIDE -->
+
+            <div class="rightpart">
+                <div class="grid3" id="choose-date">
+                    <div class="common-text-style mini-header ">choose date:</div>
+                    <div class="symbolic-decoration asterisk-symbol"></div>
+                    <div class="symbolic-decoration zero-symbol"></div>
+                </div>
+
+                <div id="insideCal">
+                    <form class="calendar">
+                        <input class="common-text-style" id="calendar1" type="date" min="1995-06-16">
+                        <input class="common-text-style" id="search" type="submit" value="search">
+                    </form>
+                </div>
+
+                <div class="grid31 green">
+                    <div class="common-text-style mini-header ">explanation:</div>
+                    <div class="symbolic-decoration one-symbol"></div>
+                    <div class="symbolic-decoration ampersand-symbol"></div>
+                </div>
+                <div class="common-text-style" id="explanation"></div>
+            </div>
+        </div>
     </div>
-    <img width="600" src="https://avatars.mds.yandex.net/get-zen_doc/1219682/pub_5eaa7423102eee24419d5607_5eaa74d77e79087ec3668df9/scale_1200">
 </body>
+
 </html>
