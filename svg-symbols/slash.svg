@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-    <text font-size="20" font-family="Courier New" font-weight="bold"
-    x="5" y="15" fill="red" stroke="none">
+    <text font-size="18" font-family="Courier New" font-weight="thin"
+    x="5" y="15" fill="#ff6b00" stroke="none">
         /
     </text>
 </svg>

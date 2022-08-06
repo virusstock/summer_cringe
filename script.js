@@ -25,5 +25,5 @@ document.addEventListener('DOMContentLoaded', function() {
         return false;
     }
 
-    changeImage('2022-08-03');
+    changeImage('2022-07-02'); 
 });

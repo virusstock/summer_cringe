@@ -5,12 +5,6 @@ body {
     justify-items: center;
 }
 
-.green {
-    background-color: green;
-    height: 100px;
-}
-
-
 .common-text-style {
     font-family: 'Courier New', Courier, monospace;
     font-weight: 500;
@@ -20,54 +14,63 @@ body {
 
 .mini-header {
     color: red;
-    font-size: 17px;
+    font-size: 22px;
     background-color: black;
     width: fit-content;
     height: fit-content;
 }
 
 h1 {
-    margin: 0px 40px;
-    color:azure; 
+    margin: 15px 40px;
+    color:rgb(255, 255, 255); 
     font-size: 18px;
     line-height: 30px;
 }
 
+#restriction{
+    color: red;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 18px;
+    background-color: black;
+}
+
 
 #canvas {
-    width: 1000px;
-    background-color: rgb(0, 0, 134);
+    width: 1100px;
+    background-color: #0a007d;
 }
 
 #line {
-    height: 40px;
-    background-color: blue;
+    height: 30px;
+    margin-top:  5px;
+    margin-bottom: 40px;
+    background-color: #0a007d;
     background-image: url(svg-symbols/plus.svg);
     background-repeat: repeat-x;
 }
 
 .grid-2 {
-    border: solid;
-
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.1fr 1fr;
     margin: 20px 0px;
-    background-color: rgb(0, 0, 134);
+    background-color: #0a007d;
 }
 
 .bodypart {
-    background: rgb(0, 0, 134);
+    background: #0a007d;
 }
 
 .leftpart {
-    background-color: rgb(7, 146, 146);
+    background-color: #0a007d;
     margin: 5px 5px;
-    padding: 0px 0px;
+    padding: 0px 0px;    
 }
 
 .img-container {
-    background: rgb(33, 187, 74);
+    background: rgb(0, 0, 0);
     padding: 10px;
+    margin-left: 40px;
 
     width: fit-content;
     height: fit-content;
@@ -75,29 +78,27 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .img-container > img {
-    width: 400px;
+    width: 450px;
+    
 } 
 
 #picText{
-    color: red;
-    width: 200px;
-    height: 21px;
+    margin-left: 40px;
 }
 
 .slash{
     background-color: black;
     width: 160px;
-    height: 21px;
+    height: 22px;
     color: rgb(249, 174, 95);
 }
 
-
-
 .rightpart {
-    background-color: rgb(23, 142, 142);
+    background-color: #0a007d;
     margin: 5px 5px;
 }
 
@@ -106,41 +107,49 @@ h1 {
     height: 30px;
 }
 #insideCal {
-    background-color: rgb(0, 0, 132);
-    height: 100px;
-    border:solid;
+    background-color: #0a007d;
+    height: 70px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    
 }
 
 #calendar1{
     background-color: black;
-    width: 120px;
-    height: 21px;
-    color: red;
+    width: 220px;
+    height: 40px;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
 }
 
 #search {
     background-color: black;
-    width: 70px;
-    height: 24px;
+    width: 170px;
+    height: 40px;
     color: red;
-    margin: 0px 50px;
+    margin-left: 73px;
+    font-size: 26px;
+    
 }
 
 .grid31 {
     display: grid;
     grid-template-columns: 33% 34% 33%;
-    background-color: rgb(0, 0, 134);
-    border: solid;
-    height: 30px;
+    background-color:#0a007d;
+    height: 22px;
+    margin-top: 60px;
 }
 
 #explanation  {
-    background-color: rgb(0, 0, 132);
+    background-color: rgb(0, 0, 0);
+    margin-right: 40px;
+    margin-top: 20px;
     height: 345px;
     color: white;
     font-size: 16px;
     line-height: 30px;
     overflow-y: scroll;
+
 }
 
 ::-webkit-scrollbar {
@@ -156,22 +165,62 @@ background-color: rgb(0, 0, 0);
     background-color: rgb(220, 20, 20);
 }
 
-
 input {
     color-scheme: dark;
 }
-
 
 .grid3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     height: 30px;
-    border: solid;
 }
 
-
 #choose-date {
-    background-color: rgb(0, 0, 134);
+    background-color: #0a007d;
     margin: 20px 0px;
-    height: 21px;
+    height: 22px;
+}
+
+#line2 {
+    height: 30px;
+    margin-top:  40px;
+    margin-bottom: 0px;
+    background-color: #0a007d;
+    background-image: url(svg-symbols/plus.svg);
+    background-repeat: repeat-x;
+    
+}
+ 
+.signature{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    text-align: justify;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0px;
+    line-height: 1.2;
+}
+
+.glitch{
+
+    display: grid;
+    
+    margin: 20px 0px;
+    background-color: #000000;
+    margin: 40px 40px;
+    height: 40px;
+}
+
+.gliText{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 19px;
+    font-weight: bold;
+    text-align: justify;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.2;
+    color:#ff6b00;
+   
 }

@@ -13,12 +13,19 @@
     <div id="canvas">
         <h1 class="common-text-style">
             HEY, IT IS NASA API!
-            On this web page, you can select the request to see photo of the day from NASA!
+            On this web page you can select a request to see photo of the day from NASA!
             The photos are also attached with a description written by someone on the NASA website.
-            Choose your favourite date! It is may be a wedding day, first time abroad, date of longnight dancing under stary sky, a day when you jumped with parachute
+            Choose your favourite date. It is may be a wedding day, first time abroad, date of a longnight dancing under starry sky, a day when you jumped with parachute
             or planted a tree. 
-            Any date you want! See amazing pictures from NASA!
+            Any date you want! See and enjoy thrilling pictures from NASA!
         </h1>
+        
+        <div>
+        <h2 class="common-text-style" id="restriction">
+            /* Need to say: there is a restriction. Nasa began to publish photos of the day from
+            June 16, 1995. So that we can not see picture dates before. */
+        </h2>
+        </div>
         <div id="line"></div>
 
         <!-- LEFT SIDE -->
@@ -29,6 +36,7 @@
                     <div class="common-text-style mini-header" id="picText">  Picture of the day: </div>
                     <div class="symbolic-decoration slash-symbol"></div>
                 </div>
+
                 
                 <div class="img-container">
                     <img id="picture-of-the-day" src="nasa.png">
@@ -40,7 +48,7 @@
 
             <div class="rightpart">
                 <div class="grid3" id="choose-date">
-                    <div class="common-text-style mini-header ">choose date:</div>
+                    <div class="common-text-style mini-header">choose date:</div>
                     <div class="symbolic-decoration asterisk-symbol"></div>
                     <div class="symbolic-decoration zero-symbol"></div>
                 </div>
@@ -48,17 +56,52 @@
                 <div id="insideCal">
                     <form class="calendar">
                         <input class="common-text-style" id="calendar1" type="date" min="1995-06-16">
-                        <input class="common-text-style" id="search" type="submit" value="search">
+                        <input class="common-text-style" id="search" type="submit" value="[ search ]">
                     </form>
                 </div>
 
-                <div class="grid31 green">
+                <div class="grid31">
                     <div class="common-text-style mini-header ">explanation:</div>
                     <div class="symbolic-decoration one-symbol"></div>
                     <div class="symbolic-decoration ampersand-symbol"></div>
                 </div>
+
                 <div class="common-text-style" id="explanation"></div>
+
             </div>
+        </div>
+
+        <div class="glitch">
+            <h1 class="gliText">
+
+                几丹己丹_丹尸工 几丹己丹_丹尸工 几丹己丹_丹尸工 几丹己丹_丹尸工 几丹己丹_丹尸工 几丹己丹_丹尸工
+            
+            </h1>
+        
+        </div>
+
+
+
+
+        <!-- SIGNATURE -->
+
+        <div id="line2"> </div>
+        <div>
+            <h1 class="signature">
+                designed & created
+            </h1>
+        </div>
+        <div>
+            <h1 class="signature">
+                by i505b
+            </h1>
+        </div>
+        <div>
+            <h1 class="signature">
+                btsu "voenmeh"
+            </h1>
+
+            
         </div>
     </div>
 </body>
