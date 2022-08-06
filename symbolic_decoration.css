@@ -1,37 +1,50 @@
 .symbolic-decoration {
     background-color: black;
     width: 80%;
-    height: 21px;
+    height: 26px;
 }
 
 .plus-symbol {
     background-image: url(svg-symbols/plus.svg);
     background-repeat: repeat-x;
+    
+    
 }
 
 .asterisk-symbol {
     background-image: url(svg-symbols/asterisk.svg);
     background-repeat: repeat-x;
+    width: 160px;
+   
 }
 
 .zero-symbol { 
     background-image: url(svg-symbols/zero.svg);
     background-repeat: repeat-x;
     justify-self: right;
+    margin-right: 40px;
+    width: 110px;
 }   
 
 .one-symbol {
     background-image: url(svg-symbols/one.svg);
     background-repeat: repeat-x;
+    margin-left: 20px;
+    width: 130px;
 }
 
 .ampersand-symbol {
     background-image: url(svg-symbols/ampersand.svg);
     background-repeat: repeat-x;
     justify-self: right;
+    margin-right: 40px;
+    width: 100px;
 }
 
 .slash-symbol {
     background-image: url(svg-symbols/slash.svg);
     background-repeat: repeat-x;
+    width: 155px;
+    margin-left: 58px;
+   
 }
