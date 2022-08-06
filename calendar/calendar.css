@@ -19,13 +19,21 @@
     text-align: center;
     border: 1px solid black;
     padding: 2px;
+    font-size: 20px;
 }
 
 .not-selected-calendar-item {
     background-color: crimson;
-    font-size: 20px;
 }
 
 .not-selected-calendar-item:hover {
-    background-color: red;
+    background-color: darkred;
+}
+
+.not-selected-other-calendar-item {
+    background-color: palevioletred;
+}
+
+.not-selected-other-calendar-item:hover {
+    background-color: pink;
 }

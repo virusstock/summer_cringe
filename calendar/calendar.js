@@ -7,7 +7,8 @@ function createCalendar(month, year) {
     const date = new Date(year, month - 1, 1);
     const firstDay = date.getDay();
     const numberOfDays = new Date(year, month, 0).getDate();
-
+    const prevMonthDays = (firstDay + 6) % 7;
+    const prevMonthNumberOfDays = new Date(year, month - 1, 0).getDate();
 
 
 
@@ -17,10 +18,10 @@ function createCalendar(month, year) {
     const calendar = document.querySelector('.custom-calendar');
     calendar.innerHTML = '';
     let daysCount = 0;
-    for (let i = 0; i < (firstDay + 7 - 1) % 7; i++) {
+    for (let i = prevMonthNumberOfDays - prevMonthDays + 1; i <= prevMonthNumberOfDays; i++) {
         const item = document.createElement('div');
-        item.className = 'calendar-item not-selected-calendar-item';
-        item.innerHTML = '';
+        item.className = 'calendar-item not-selected-other-calendar-item';
+        item.innerHTML = i;
         calendar.appendChild(item);
         daysCount++;
     }
@@ -31,13 +32,13 @@ function createCalendar(month, year) {
         calendar.appendChild(item);
         daysCount++;
     }
-    for (let i = 0; i < (7 - (daysCount % 7)) % 7; i++) {
+    for (let i = 1; i <= (7 - (daysCount % 7)) % 7; i++) {
         const item = document.createElement('div');
-        item.className = 'calendar-item not-selected-calendar-item';
-        item.innerHTML = '';
+        item.className = 'calendar-item not-selected-other-calendar-item';
+        item.innerHTML = i;
         calendar.appendChild(item);
     }
 }
 
 
-document.addEventListener('DOMContentLoaded', () => createCalendar(8, 2022));
+document.addEventListener('DOMContentLoaded', () => createCalendar(4, 2022));
