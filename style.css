@@ -64,7 +64,7 @@ h1 {
 .leftpart {
     background-color: #0a007d;
     margin: 5px 5px;
-    padding: 0px 0px;
+    padding: 0px 0px;    
 }
 
 .img-container {
@@ -201,23 +201,26 @@ input {
     margin: 0px;
     line-height: 1.2;
 }
-\
+
 .glitch{
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    
     margin: 20px 0px;
-    background-color: #ff6b00;
+    background-color: #000000;
     margin: 40px 40px;
+    height: 40px;
 }
 
 .gliText{
     font-family: 'Courier New', Courier, monospace;
     font-size: 19px;
+    font-weight: bold;
     text-align: justify;
     font-weight: 500;
     text-transform: uppercase;
     text-align: center;
     line-height: 1.2;
+    color:#ff6b00;
    
 }
