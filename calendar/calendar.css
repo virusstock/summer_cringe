@@ -1,4 +1,27 @@
 .custom-calendar {
+    width: fit-content;
+    height: fit-content;
+    
+    background-color: gray;
+    border: solid black;
+
+    display: grid;
+    justify-items: stretch;
+    
+    padding: 2px;
+    row-gap: 2px;
+}
+
+.calendar-header {
+    text-align: center;
+    
+    border: solid black;
+    background-color: violet;
+    
+    padding: 2px;
+}
+
+.calendar-body {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     align-items: stretch;
@@ -11,7 +34,7 @@
     width: fit-content;
     height: fit-content;
     
-    background-color: brown;
+    background-color: indianred;
     border: solid black;
 }
 
@@ -23,11 +46,11 @@
 }
 
 .not-selected-calendar-item {
-    background-color: crimson;
+    background-color: darkred;
 }
 
 .not-selected-calendar-item:hover {
-    background-color: darkred;
+    background-color: crimson;
 }
 
 .not-selected-other-calendar-item {

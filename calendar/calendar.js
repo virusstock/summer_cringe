@@ -15,29 +15,39 @@ function createCalendar(month, year) {
 
 
 
-    const calendar = document.querySelector('.custom-calendar');
-    calendar.innerHTML = '';
+    const calendarHeader = document.createElement('div');
+    calendarHeader.className = 'calendar-header';
+    calendarHeader.innerHTML = date.toDateString();
+
+    const calendarBody = document.createElement('div');
+    calendarBody.className = 'calendar-body';
+
     let daysCount = 0;
     for (let i = prevMonthNumberOfDays - prevMonthDays + 1; i <= prevMonthNumberOfDays; i++) {
         const item = document.createElement('div');
         item.className = 'calendar-item not-selected-other-calendar-item';
         item.innerHTML = i;
-        calendar.appendChild(item);
+        calendarBody.appendChild(item);
         daysCount++;
     }
     for (let i = 1; i <= numberOfDays; i++) {
         const item = document.createElement('div');
         item.className = 'calendar-item not-selected-calendar-item';
         item.innerHTML = i;
-        calendar.appendChild(item);
+        calendarBody.appendChild(item);
         daysCount++;
     }
     for (let i = 1; i <= (7 - (daysCount % 7)) % 7; i++) {
         const item = document.createElement('div');
         item.className = 'calendar-item not-selected-other-calendar-item';
         item.innerHTML = i;
-        calendar.appendChild(item);
+        calendarBody.appendChild(item);
     }
+
+    const calendar = document.querySelector('.custom-calendar');
+    calendar.innerHTML = '';
+    calendar.appendChild(calendarHeader);
+    calendar.appendChild(calendarBody);
 }
 
 
