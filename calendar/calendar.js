@@ -24,24 +24,18 @@ function createCalendarBody(date) {
     const calendarBody = document.createElement('div');
     calendarBody.className = 'calendar-body';
 
-    for (let day = prevMonthFirstDayToShow; day <= prevMonthNumberOfDays; day++) {
-        const item = document.createElement('div');
-        item.className = 'calendar-item not-selected-other-calendar-item';
-        item.innerHTML = day;
-        calendarBody.appendChild(item);
+    function addCalendarItems(firstDay, lastDay, className) {
+        for (let day = firstDay; day <= lastDay; day++) {
+            const item = document.createElement('div');
+            item.className = `calendar-item ${className}`;
+            item.innerHTML = day;
+            calendarBody.appendChild(item);
+        }
     }
-    for (let day = 1; day <= numberOfDays; day++) {
-        const item = document.createElement('div');
-        item.className = 'calendar-item not-selected-calendar-item';
-        item.innerHTML = day;
-        calendarBody.appendChild(item);
-    }
-    for (let day = 1; day <= nextMonthDaysToShow; day++) {
-        const item = document.createElement('div');
-        item.className = 'calendar-item not-selected-other-calendar-item';
-        item.innerHTML = day;
-        calendarBody.appendChild(item);
-    }
+
+    addCalendarItems(prevMonthFirstDayToShow, prevMonthNumberOfDays, 'not-selected-other-calendar-item');
+    addCalendarItems(1, numberOfDays, 'not-selected-calendar-item');
+    addCalendarItems(1, nextMonthDaysToShow, 'not-selected-other-calendar-item');
     
     return calendarBody;
 }
