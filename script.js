@@ -18,9 +18,9 @@ async function changeImage(date) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    const form = document.querySelector('.calendar');
-    form.onsubmit = function() {
-        changeImage(this.querySelector('#calendar1').value);
+    const dateForm = document.forms['date-form'];
+    dateForm.onsubmit = function() {
+        changeImage(form.elements['date'].value);
         
         return false;
     }

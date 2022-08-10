@@ -5,7 +5,7 @@
     background-color: gray;
     border: solid black;
 
-    display: grid;
+    display: inline-grid;
     justify-items: stretch;
     
     padding: 2px;
@@ -13,12 +13,26 @@
 }
 
 .calendar-header {
-    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     
     border: solid black;
     background-color: violet;
     
     padding: 2px;
+}
+
+.calendar-header-arrows {
+    text-align: right;
+}
+
+.calendar-header-date-info {
+    text-align: left;
+}
+
+.calendar-arrow {
+    border: 1px solid black;
+    margin: 0px 2px;
 }
 
 .calendar-body {

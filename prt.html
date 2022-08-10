@@ -4,12 +4,15 @@
 <head>
     
     <title> --+- [ A P I ] -+-- </title>
+    <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="symbolic_decoration.css">
     <script src="script.js"></script>
 
+    <!--
     <link rel="stylesheet" href="calendar/calendar.css">
     <script src="calendar/calendar.js"></script>
+    -->
 </head>
 
 <body>
@@ -49,8 +52,8 @@
                 </div>
 
                 <div id="insideCal">
-                    <form class="calendar">
-                        <input class="common-text-style" id="calendar1" type="date" min="1995-06-16">
+                    <form name="date-form">
+                        <input class="common-text-style" id="calendar1" name="date" type="date" min="1995-06-16">
                         <input class="common-text-style" id="search" type="submit" value="search">
                     </form>
                 </div>
@@ -63,8 +66,6 @@
                 <div class="common-text-style" id="explanation"></div>
             </div>
         </div>
-        
-        <div class="custom-calendar"></div>
     </div>
 </body>
 
