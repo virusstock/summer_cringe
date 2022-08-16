@@ -22,17 +22,18 @@
     padding: 2px;
 }
 
-.calendar-header-arrows {
+.calendar-control {
     text-align: right;
 }
 
-.calendar-header-date-info {
+.calendar-month-info {
     text-align: left;
 }
 
 .calendar-arrow {
     border: 1px solid black;
     margin: 0px 2px;
+    user-select: none;
 }
 
 .calendar-body {
@@ -57,6 +58,7 @@
     border: 1px solid black;
     padding: 2px;
     font-size: 20px;
+    user-select: none;
 }
 
 .not-selected-calendar-item {

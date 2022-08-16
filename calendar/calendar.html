@@ -5,12 +5,15 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="calendar.css">
         <script src="calendar.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const calendar = createCalendar(new Date());
+                const calendarDiv = document.querySelector('.calendar');
+                calendarDiv.appendChild(calendar);
+            });
+        </script>
     </head>
     <body>
-        <h1>Calendar</h1>
-        <form name="date-form">
-            <input name="date" type="date" autofocus="true">
-            <input type="submit">
-        </form>
+        <div class="calendar"></div>
     </body>
 </html>
